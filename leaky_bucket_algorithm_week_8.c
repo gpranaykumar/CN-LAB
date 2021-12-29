@@ -50,3 +50,36 @@ int main(){
     }
     return 0;
 }
+
+/*
+Enter the number of packets: 4
+Enter packets in the order of their arrival time 
+ENter the time and size: 1 100
+ENter the time and size: 2 200
+ENter the time and size: 3 300
+ENter the time and size: 4 400
+Enter the bucket size: 300
+Enter the output rate: 200
+
+
+At time 1
+100 byte packet is inserted
+100 bytes transfered
+Packets in the bucket 0 byte
+
+At time 2
+200 byte packet is inserted
+200 bytes transfered
+Packets in the bucket 0 byte
+
+At time 3
+300 byte packet is inserted
+200 bytes transfered
+Packets in the bucket 100 byte
+
+At time 4
+400 byte packet is discarder
+100 bytes transfered
+Packets in the bucket 0 byte
+
+*/
